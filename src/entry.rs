@@ -26,7 +26,7 @@ pub struct MarketPair {
     pub marketPair: String,
     pub category: String,
     pub marketUrl: String,
-    pub marketScore: u32,
+    pub marketScore: String,
     pub marketReputation: u32,
     pub baseSymbol: String,
     pub baseCurrencyId: u32,
