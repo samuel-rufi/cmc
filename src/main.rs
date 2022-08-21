@@ -1,5 +1,4 @@
 use std::fs;
-use serde::{Serialize, Deserialize};
 
 mod entry;
 

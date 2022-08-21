@@ -1,44 +1,46 @@
+use serde::{Serialize, Deserialize};
+
 #[derive(Serialize, Deserialize, Debug)]
-struct FullEntry {
-    data: DataObject
+pub struct FullEntry {
+    pub data: DataObject
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-struct DataObject {
-    id: u32,
-    name: String,
-    slug: String,
-    numMarketPairs: u32,
-    marketPairs: Vec<MarketPair>
+pub struct DataObject {
+    pub id: u32,
+    pub name: String,
+    pub slug: String,
+    pub numMarketPairs: u32,
+    pub marketPairs: Vec<MarketPair>
 }
 
 #[derive(Serialize, Deserialize, Debug)]
-struct MarketPair {
-    exchangeId: u32,
-    exchangeName: String,
-    exchangeSlug: String,
-    outlierDetected: u32,
-    priceExcluded: u32,
-    volumeExcluded: u32,
-    marketId: 40454,
-    marketPair: String,
-    category: String,
-    marketUrl: String,
-    marketScore: u32,
-    marketReputation: u32,
-    baseSymbol: String,
-    baseCurrencyId: u32,
-    baseCurrencyName: String,
-    baseCurrencySlug: String,
-    quoteSymbol: String,
-    quoteCurrencyId: u32,
-    price: f64,
-    volumeUsd: f64,
-    effectiveLiquidity: f64,
-    lastUpdated: String,
-    volumeBase: f64,
-    volumeQuote: f64,
-    feeType: String,
-    depthUsdNegativeTwo: f64,
-    depthUsdPositiveTwo: f64,
+pub struct MarketPair {
+    pub exchangeId: u32,
+    pub exchangeName: String,
+    pub exchangeSlug: String,
+    pub outlierDetected: u32,
+    pub priceExcluded: u32,
+    pub volumeExcluded: u32,
+    pub marketId: 40454,
+    pub marketPair: String,
+    pub category: String,
+    pub marketUrl: String,
+    pub marketScore: u32,
+    pub marketReputation: u32,
+    pub baseSymbol: String,
+    pub baseCurrencyId: u32,
+    pub baseCurrencyName: String,
+    pub baseCurrencySlug: String,
+    pub quoteSymbol: String,
+    pub quoteCurrencyId: u32,
+    pub price: f64,
+    pub volumeUsd: f64,
+    pub effectiveLiquidity: f64,
+    pub lastUpdated: String,
+    pub volumeBase: f64,
+    pub volumeQuote: f64,
+    pub feeType: String,
+    pub depthUsdNegativeTwo: f64,
+    pub depthUsdPositiveTwo: f64,
 }
