@@ -22,7 +22,7 @@ pub struct MarketPair {
     pub outlierDetected: u32,
     pub priceExcluded: u32,
     pub volumeExcluded: u32,
-    pub marketId: 40454,
+    pub marketId: u32,
     pub marketPair: String,
     pub category: String,
     pub marketUrl: String,
